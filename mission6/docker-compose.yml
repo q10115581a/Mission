@@ -13,6 +13,7 @@ services:
     container_name: mysql
     ports:
       - "3306:3306"
-     environment:
-       - MYSQL_ROOT_PASSWORD: iii
-
+    environment:
+       - MYSQL_ROOT_PASSWORD:iii
+    volumes:
+      - ./sql:/home/jovyan/sql/
